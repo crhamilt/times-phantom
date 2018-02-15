@@ -41,6 +41,13 @@ def dprint(*args0):
 
 def meas_times(img, showit):
 
+    """
+    meas_times(img, showit)
+        img: DICOM image of T1MES phantom (axial)
+        showit: 0= don't display image
+                1= show image using opencv.imshow()
+    """
+
     dset = dicom.read_file(img, force=True)
     imp = dset.pixel_array
     dprint('imp shape =', imp.shape)

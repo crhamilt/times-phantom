@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+dailyrun.py:  cron job to check for new T1MES phantom images and analyze them using meastimes.py
+
+
+
+"""
 # perform automated analysis of MR scans of the T1MES phantom
 
 # this script is run by cron every day at 3am on aging2a
